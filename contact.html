@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dr. About Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="d-none d-md-block w-100" id="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-8">
+            <div class="d-flex flex-wrap gap-4">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-envelope text-white"></i>
+                <a
+                  href="mailto:aryavratcd@gmail.com"
+                  class="text-white text-decoration-none"
+                  >aryavratcd@gmail.com</a
+                >
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-phone text-white"></i>
+                <a
+                  href="tel:+91-7633940407"
+                  class="text-white text-decoration-none"
+                  >+91-7633940407</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center gap-3 justify-content-end"
+          >
+            <div class="d-flex flex-colmun align-items-center gap-3">
+              <i class="fa-brands fa-square-facebook text-light"></i>
+              <i class="fa-brands fa-square-x-twitter text-light"></i>
+              <i class="fa-brands fa-square-pinterest text-light"></i>
+              <i class="fa-brands fa-linkedin text-light"></i>
+            </div>
+            <a href="/contact.html" id="free-btn">Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="/">
+          <!-- <img src="./Img/ca-logo.png" alt="Logo" /> -->
+          <h1 class="h1 fw-bold text-secondary">Dr.</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary text-uppercase fw-semibold"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary text-uppercase fw-semibold"
+                href="/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary text-uppercase fw-semibold"
+                href="/services.html"
+                >Experties</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary text-uppercase fw-semibold"
+                href="/gallery.html"
+                >Our Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary text-uppercase fw-semibold"
+                href="/contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section">
+      <div class="breadcrumb-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 data-aos="fade-down" class="text-white display-4 fw-bold mb-3">
+              Contact Us
+            </h2>
+            <nav aria-label="breadcrumb">
+              <ol data-aos="fade-up" class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                  <a href="/" class="text-white text-decoration-none">Home</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Contact Us
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Contact Section -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+              <div
+                data-aos="flip-up"
+                class="contact-form p-4 bg-light rounded-3"
+              >
+                <h3 class="mb-4 fw-bold">Get In Touch</h3>
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Your Phone"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contact Info & Map -->
+            <div class="col-lg-6">
+              <div data-aos="flip-down" class="contact-info mb-4">
+                <h3 class="mb-4 fw-bold">Contact Information</h3>
+                <div class="d-flex align-items-start gap-3 mb-4">
+                  <div class="contact-icon">
+                    <i class="fas fa-location-dot fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">Our Location</h5>
+                    <p class="text-secondary mb-0">
+                      Shahdeo mahto marg, Boring Canal Rd, near Bikaner sweet
+                      house, Patna, Bihar 800001
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3 mb-4">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">Phone Number</h5>
+                    <p class="text-secondary mb-0">
+                      <a
+                        href="tel:+91-7633940407"
+                        class="text-secondary text-decoration-none"
+                        >+91-7633940407</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3 mb-4">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope fs-4 text-primary"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">Email Address</h5>
+                    <p class="text-secondary mb-0">
+                      <a
+                        href="mailto:aryavratcd@gmail.com"
+                        class="text-secondary text-decoration-none"
+                        >aryavratcd@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Map -->
+              <div class="map-container rounded-3 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8111373038287!2d85.11500517474101!3d25.611191314809332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed596976cf1aaf%3A0xa7abb7a587deee62!2sDr%20Vaibhav%20Shankar%20-%20Advance%20chest%20care%20clinic!5e0!3m2!1sen!2sin!4v1740221170069!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h2 class="h4 mb-4 text-primary fw-bold">Quick Links</h2>
+              <ul class="list-unstyled footer-links">
+                <li>
+                  <a href="/"><i class="fas fa-chevron-right me-2"></i>Home</a>
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fas fa-chevron-right me-2"></i>About</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fas fa-chevron-right me-2"></i>Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="gallery.html"
+                    ><i class="fas fa-chevron-right me-2"></i>Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fas fa-chevron-right me-2"></i>Services</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h2 class="h4 mb-4 text-primary fw-bold">Our Services</h2>
+              <ul class="list-unstyled footer-links">
+                <li><i class="fas fa-heart me-2"></i>Cardiac Surgery</li>
+                <li><i class="fas fa-heartbeat me-2"></i>Heart Disease</li>
+                <li><i class="fas fa-stethoscope me-2"></i>Consultation</li>
+                <li><i class="fas fa-user-md me-2"></i>Expert Doctors</li>
+                <li><i class="fas fa-ambulance me-2"></i>24/7 Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h2 class="h4 mb-4 text-primary fw-bold">Get In Touch</h2>
+              <div class="contact-info">
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div class="contact-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </div>
+                  <p class="mb-0">Dr. Vaibhav Shankar</p>
+                </div>
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <p class="mb-0">
+                    <a href="tel:+91-7633940407">+91-7633940407</a>
+                  </p>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <p class="mb-0">
+                    <a href="mailto:aryavratcd@gmail.com"
+                      >aryavratcd@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h2 class="h4 mb-4 text-primary fw-bold">Follow Us</h2>
+              <p class="mb-4">
+                Stay connected with us on social media for updates, health tips,
+                and more.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider my-4" />
+        <div class="footer-bottom text-center">
+          <p class="mb-0">
+            &copy; Copyright 2025 Dr. Vaibhav Shankar - All Rights Reserved |
+            Made with
+            <i class="fas fa-heart text-danger"></i> by
+            <a
+              href="https://www.webzyro.com/"
+              target="_blank"
+              class="text-primary text-decoration-none"
+            >
+              Webzyro
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+
+    <!-- Aos Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
+
+    <!-- Owl Carousel -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
