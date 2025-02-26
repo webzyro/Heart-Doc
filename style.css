@@ -157,10 +157,10 @@ h6 {
 
 .carousel-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 20%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  text-align: start;
   color: white;
   z-index: 2;
   width: 100%;
@@ -168,7 +168,7 @@ h6 {
 }
 
 .carousel-content h1 {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -250,13 +250,7 @@ h6 {
 }
 
 .service-img-wrapper {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
   overflow: hidden;
-  border: 2px solid var(--primary-bg);
-  border-radius: 50%;
-  padding: 5px;
 }
 
 .service-img-wrapper img {
