@@ -447,8 +447,69 @@ a {
 .banner-section p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+/* Experience Section Styling */
+.experience-section {
+  position: relative;
+  overflow: hidden;
+}
 
-/* Feature Card Section */
+.section-header .subtitle {
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.header-line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--primary-bg);
+  margin: 20px auto 0;
+}
+
+.experience-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(var(--primary-bg-rgb), 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise-stats .stat-item {
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.expertise-stats .stat-item:hover {
+  background: var(--primary-bg);
+  color: white;
+}
+
+.expertise-stats .stat-item:hover h4 {
+  color: white !important;
+}
+
+.list-unstyled li {
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.list-unstyled li:hover {
+  padding-left: 10px;
+  color: var(--primary-bg);
+}
+
 .card-section {
   margin-top: -150px;
 }
