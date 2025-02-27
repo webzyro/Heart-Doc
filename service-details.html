@@ -69,9 +69,7 @@
       <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="/">
           <!-- <img src="./Img/ca-logo.png" alt="Logo" /> -->
-          <h1 class="h1 fw-bold text-secondary text-danger">
-            Dr. Vaibhav Shankar
-          </h1>
+          <h2 class="h2 fw-bold text-primary">Dr. Vaibhav Shankar</h2>
         </a>
         <button
           class="navbar-toggler"
@@ -84,22 +82,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
-                href="/"
+              <a class="nav-link text-dark text-uppercase fw-semibold" href="/"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
+                class="nav-link text-dark text-uppercase fw-semibold"
                 href="/about.html"
                 >About</a
               >
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-secondary text-uppercase fw-semibold"
+                class="nav-link dropdown-toggle text-dark text-uppercase fw-semibold"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -117,14 +113,14 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
+                class="nav-link text-dark text-uppercase fw-semibold"
                 href="/gallery.html"
                 >Our Gallery</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
+                class="nav-link text-dark text-uppercase fw-semibold"
                 href="/contact.html"
                 >Contact Us</a
               >
@@ -318,7 +314,12 @@
                       >
                     </div>
                   </div>
-                  <a href="/contact.html" class="btn btn-light w-100"
+
+                  <a
+                    href="#"
+                    class="btn btn-light w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#appointmentModal"
                     >Book Appointment</a
                   >
                 </div>
@@ -328,6 +329,102 @@
         </div>
       </section>
     </main>
+
+    <!-- Appointment Modal -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-labelledby="appointmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="appointmentModalLabel">
+              Book an Appointment
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="appointmentForm">
+              <div class="mb-2">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-2">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required />
+              </div>
+              <div class="mb-3">
+                <label for="appointmentDate" class="form-label"
+                  >Preferred Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="appointmentDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="appointmentTime" class="form-label"
+                  >Preferred Time</label
+                >
+                <select class="form-select" id="appointmentTime" required>
+                  <option value="">Select Time</option>
+                  <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                  <option value="afternoon">
+                    Afternoon (2:00 PM - 5:00 PM)
+                  </option>
+                  <option value="evening">Evening (6:00 PM - 8:00 PM)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Required</label>
+                <select class="form-select" id="service" required>
+                  <option value="">Select Service</option>
+                  <option value="sleep-medicine">Sleep Medicine</option>
+                  <option value="allergy">Allergy Treatment</option>
+                  <option value="copd">COPD Management</option>
+                  <option value="asthma">Asthma Care</option>
+                  <option value="bronchoscopy">Bronchoscopy</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label for="message" class="form-label">Additional Notes</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              form="appointmentForm"
+              class="btn btn-primary"
+            >
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer-section">

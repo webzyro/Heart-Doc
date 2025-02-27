@@ -87,7 +87,7 @@ h6 {
 }
 
 .navbar-nav a:hover {
-  color: var(--hover-color) !important;
+  color: var(--secondary-bg) !important;
 }
 
 /* Hero & Carousel Section */
@@ -234,6 +234,10 @@ h6 {
   background-color: var(--primary-bg);
 }
 
+.img-shadow {
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3)) !important;
+}
+
 /* Service Section */
 .service-card {
   background: #f8f9fa;
@@ -255,7 +259,7 @@ h6 {
 
 .service-img-wrapper img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -277,15 +281,6 @@ h6 {
 .service-card .service-link {
   position: relative;
   display: inline-block;
-}
-
-.service-card .service-link i {
-  color: var(--primary-bg);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover .service-link i {
-  transform: translateX(5px);
 }
 
 /* CTA Section */
@@ -841,6 +836,50 @@ a {
 .contact-widget .btn:hover {
   background: var(--secondary-bg);
   color: white;
+}
+
+/* Appointment Modal Styles */
+.modal-content {
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control,
+.form-select {
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-bg);
+  box-shadow: 0 0 0 0.2rem rgba(var(--primary-bg-rgb), 0.25);
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-bg);
+  border-color: var(--secondary-bg);
 }
 
 /* Footer Styling */
