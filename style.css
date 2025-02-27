@@ -372,6 +372,77 @@ a {
   background: var(--primary-bg) !important;
 }
 
+/* Why Choose Us Section Styles */
+.why-choose-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-choose-section .subtitle {
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+}
+
+.choose-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.choose-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.choose-card .icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: rgba(var(--primary-bg-rgb), 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.choose-card:hover .icon-wrapper {
+  background: var(--primary-bg);
+}
+
+.choose-card:hover .icon-wrapper i {
+  color: white !important;
+}
+
+.choose-card h3 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.choose-card h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--primary-bg);
+}
+
+@media (max-width: 768px) {
+  .why-choose-section .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .choose-card {
+    text-align: center;
+  }
+
+  .choose-card h3:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* Stats Section */
 #stats-section {
   background-image: url("/image/statistic.jpg");
