@@ -403,19 +403,20 @@ a {
 }
 
 .choose-card {
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3ms ease-in;
+  border: 2px solid var(--secondary-bg);
 }
 
 .choose-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .choose-card .icon-wrapper {
   width: 80px;
   height: 80px;
-  background: rgba(var(--primary-bg-rgb), 0.1);
+  /* background: rgba(var(--primary-bg-rgb), 0.1); */
+  background: var(--secondary-bg);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -424,17 +425,15 @@ a {
   transition: all 0.3s ease;
 }
 
-.choose-card:hover .icon-wrapper {
-  background: var(--primary-bg);
-}
-
-.choose-card:hover .icon-wrapper i {
+.choose-card .icon-wrapper i {
   color: white !important;
 }
 
 .choose-card h3 {
   position: relative;
   padding-bottom: 15px;
+  color: var(--secondary-bg);
+  font-weight: bold;
 }
 
 .choose-card h3:after {
