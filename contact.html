@@ -49,15 +49,15 @@
                 <a
                   href="mailto:aryavratcd@gmail.com"
                   class="text-white text-decoration-none"
-                  >aryavratcd@gmail.com</a
+                  >dr.vaibhav@gmail.com</a
                 >
               </div>
               <div class="d-flex align-items-center gap-2">
                 <i class="fas fa-phone text-white"></i>
                 <a
-                  href="tel:+91-7633940407"
+                  href="tel:+91-7487935974"
                   class="text-white text-decoration-none"
-                  >+91-7633940407</a
+                  >+91-7487935974</a
                 >
               </div>
             </div>
@@ -84,7 +84,9 @@
       <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="/">
           <!-- <img src="./Img/ca-logo.png" alt="Logo" /> -->
-          <h1 class="h1 fw-bold text-secondary">Dr.</h1>
+          <h1 class="h1 fw-bold text-secondary text-danger">
+            Dr. Vaibhav Shankar
+          </h1>
         </a>
         <button
           class="navbar-toggler"
@@ -110,12 +112,23 @@
                 >About</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
-                href="/services.html"
-                >Experties</a
+                class="nav-link dropdown-toggle text-secondary text-uppercase fw-semibold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a
@@ -173,7 +186,7 @@
             <div class="col-lg-6">
               <div
                 data-aos="flip-up"
-                class="contact-form p-4 bg-light rounded-3"
+                class="contact-form p-4 bg-light rounded-3 border border-2 border-danger"
               >
                 <h3 class="mb-4 fw-bold">Get In Touch</h3>
                 <form id="contactForm">
@@ -293,7 +306,7 @@
 
     <!-- Footer -->
     <footer class="footer-section">
-      <div class="container">
+      <div class="container text-center text-lg-start">
         <div class="row gy-4">
           <div class="col-lg-3">
             <div class="footer-widget">
@@ -341,27 +354,33 @@
             <div class="footer-widget">
               <h2 class="h4 mb-4 text-primary fw-bold">Get In Touch</h2>
               <div class="contact-info">
-                <div class="d-flex align-items-start gap-3 mb-3">
+                <div
+                  class="d-flex align-items-start justify-content-center justify-content-lg-start gap-3 mb-3"
+                >
                   <div class="contact-icon">
                     <i class="fas fa-location-dot"></i>
                   </div>
                   <p class="mb-0">Dr. Vaibhav Shankar</p>
                 </div>
-                <div class="d-flex align-items-start gap-3 mb-3">
+                <div
+                  class="d-flex align-items-start justify-content-center justify-content-lg-start gap-3 mb-3"
+                >
                   <div class="contact-icon">
                     <i class="fas fa-phone"></i>
                   </div>
                   <p class="mb-0">
-                    <a href="tel:+91-7633940407">+91-7633940407</a>
+                    <a href="tel:+91-7487935974">+91-7487935974</a>
                   </p>
                 </div>
-                <div class="d-flex align-items-start gap-3">
+                <div
+                  class="d-flex align-items-start justify-content-center justify-content-lg-start gap-3"
+                >
                   <div class="contact-icon">
                     <i class="fas fa-envelope"></i>
                   </div>
                   <p class="mb-0">
                     <a href="mailto:aryavratcd@gmail.com"
-                      >aryavratcd@gmail.com</a
+                      >dr.vaibhav@gmail.com</a
                     >
                   </p>
                 </div>
@@ -375,7 +394,9 @@
                 Stay connected with us on social media for updates, health tips,
                 and more.
               </p>
-              <div class="social-links">
+              <div
+                class="social-links justify-content-center justify-content-lg-start"
+              >
                 <a href="#" class="social-icon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>

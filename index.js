@@ -97,9 +97,13 @@ function createGalleryItem(image) {
 }
 
 // Populate galleries
-document.getElementById("bredaGallery").innerHTML = galleryImages
-  .map((img) => createGalleryItem(img))
-  .join("");
+// Check if element exists before setting innerHTML
+const bredaGallery = document.getElementById("bredaGallery");
+if (bredaGallery) {
+  bredaGallery.innerHTML = galleryImages
+    .map((img) => createGalleryItem(img))
+    .join("");
+}
 document.getElementById("privateGallery").innerHTML = galleryImages
   .map((img) => createGalleryItem(img))
   .join("");

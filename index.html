@@ -111,12 +111,23 @@
                 >About</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link text-secondary text-uppercase fw-semibold"
-                href="/services.html"
-                >Experties</a
+                class="nav-link dropdown-toggle text-secondary text-uppercase fw-semibold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a
@@ -303,9 +314,9 @@
                   Angiography is a medical imaging technique that is used to
                   visualize the inside of arteries..
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
 
@@ -323,9 +334,9 @@
                   Peripheral artery disease,alsoreferred to as peripheral
                   arterial disease.
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -342,9 +353,9 @@
                   Cardiac catheterization (kath-uh- tur-ih-ZAY-shun) is a
                   procedure used to diagnose and treat cardiova
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
             <!-- Continue with other service cards following the same pattern -->
@@ -362,9 +373,9 @@
                   Coronary bypass surgery is a procedure that restores blood
                   flow to your heart muscle by diverting the
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -381,9 +392,9 @@
                   The purpose of your heart is to pump blood to the organs and
                   tissues of your body that need the oxyg
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -402,9 +413,9 @@
                   Percutaneous balloon mitral valvuloplasty (BMV) is an
                   effective and safe method in treating rheumati
                 </p>
-                <div class="service-link">
+                <a href="/service-details.html" class="service-link">
                   <i class="fa-solid fa-arrow-right text-primary"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -873,131 +884,6 @@
           </div>
         </div>
       </section>
-
-      <!-- YouTube Shorts Section -->
-      <!-- <section class="py-5">
-        <div class="container">
-          <p class="fs-6 text-info fw-semibold text-center">Our Videos</p>
-          <h2 class="fs-1 fw-bold text-center mb-5">Latest Health Tips</h2>
-
-          <div class="row g-4">
-            <div class="col-md-3">
-              <div class="video-card">
-                <div class="video-wrapper">
-                  <iframe
-                    src="https://www.youtube.com/embed/1hqY48dRV6M"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-3"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="video-card">
-                <div class="video-wrapper">
-                  <iframe
-                    src="https://www.youtube.com/embed/Eu9XwwUfQlM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-3"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="video-card">
-                <div class="video-wrapper">
-                  <iframe
-                    src="https://www.youtube.com/embed/uVJStFzL9Mc"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-3"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="video-card">
-                <div class="video-wrapper">
-                  <iframe
-                    src="https://www.youtube.com/embed/IkteKyNEmzc"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-3"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Testimonials Section -->
-      <!-- <section class="my-4">
-        <div class="container">
-          <p class="fs-6 text-info fw-semibold text-center">Testimonials</p>
-          <h2 class="fs-1 fw-bold text-center mb-5">What Patients Says</h2>
-
-          <div class="owl-carousel testimonial-carousel"> -->
-      <!-- Testimonial 1 -->
-      <!-- <div class="testimonial-item text-center p-4">
-              <div class="testimonial-img mb-4">
-                <img
-                  src="./image/testimonial1.jpg"
-                  alt="Patient 1"
-                  class="rounded-circle mx-auto"
-                />
-              </div>
-              <p class="testimonial-text mb-3">
-                "Exceptional care and professionalism. Dr. Agarwal took the time
-                to explain everything thoroughly and made me feel at ease
-                throughout my treatment."
-              </p>
-              <h4 class="mb-1">John Doe</h4>
-              <p class="text-muted">Heart Patient</p>
-            </div> -->
-
-      <!-- Testimonial 2 -->
-      <!-- <div class="testimonial-item text-center p-4">
-              <div class="testimonial-img mb-4">
-                <img
-                  src="./image/testimonial1.jpg"
-                  alt="Patient 2"
-                  class="rounded-circle mx-auto"
-                />
-              </div>
-              <p class="testimonial-text mb-3">
-                "I am grateful for the outstanding care I received. The entire
-                team was compassionate and highly skilled. Highly recommended!"
-              </p>
-              <h4 class="mb-1">Jane Smith</h4>
-              <p class="text-muted">Cardiac Patient</p>
-            </div> -->
-
-      <!-- Testimonial 3 -->
-      <!-- <div class="testimonial-item text-center p-4">
-              <div class="testimonial-img mb-4">
-                <img
-                  src="./image/testimonial1.jpg"
-                  alt="Patient 3"
-                  class="rounded-circle mx-auto"
-                />
-              </div>
-              <p class="testimonial-text mb-3">
-                "Dr. Agarwal's expertise and dedication to patient care is
-                remarkable. I couldn't have asked for better treatment."
-              </p>
-              <h4 class="mb-1">Mike Johnson</h4>
-              <p class="text-muted">Cardiac Surgery Patient</p>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- Footer -->
       <footer class="footer-section">
